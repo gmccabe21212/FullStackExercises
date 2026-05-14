@@ -6,14 +6,14 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />        
-        <link href="0.2.css" rel="stylesheet" /> <!-- Links stylesheet to HTML file-->
+        <link href="stylesheet.css" rel="stylesheet" /> <!-- Links stylesheet to HTML file-->
         <title>My Test Page</title>
     </head>
     <body>
 
         <!-- Header levels-->
         <h1> Mozilla is cool </h1>
-        
+
         <img src="mozilla-firefox-vector-logo-free-download-11574158206bklstbipcu.png" alt="My test image" />
 
 
@@ -31,5 +31,22 @@
          <p> paragraph with a link  <a href="https://www.mozilla.org/en-US/about/manifesto/">
             Mozilla Manifesto
         </a> blah blah blah </p>
+        <form action="/my-handling-form-page" method="post">
+            <p> 
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" />
+            </p>
+            <p>
+                <label for="mail">Email:</label>
+                <input type="text" id="mail" name="user_name">
+            </p>
+            <p>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </p>
+            <p class="button">
+                <button type="submit">Send your message</button>
+            </p>
+        </form>
     </body>
 </html>
